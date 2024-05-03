@@ -57,7 +57,7 @@ class WordApp(ft.UserControl):
     def __init__(self, *args, **kwargs):
         self.popup_win = ft.AlertDialog(
                         modal=True,
-                        title=ft.Text(value="GANASTE ERES UN VERDADERO SOLANER@ 🍇!"),
+                        title=ft.Text(value="GANASTE ERES UN VERDADERO SOLANER@!"),
                         content=ft.Text(value=f"Enhorabuena"),
                         actions=[
                             ft.TextButton("New Game", on_click=self.close_popup_win),
@@ -68,7 +68,7 @@ class WordApp(ft.UserControl):
         self.popup_lose = ft.AlertDialog(
                         modal=True,
                         title=ft.Text(value=f"La palabra era '{word_selected.upper()}'"),
-                        content=ft.Text(value=f"NO ERES UN VERDADERO SOLANER@ 😭"),
+                        content=ft.Text(value=f"NO ERES UN VERDADERO SOLANER@"),
                         actions=[
                             ft.TextButton("retry :D", on_click=self.close_popup_lose),
                         ],
